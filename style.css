@@ -1,67 +1,32 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #222;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #111;
-  color: #fff;
-  padding: 1rem;
-}
-
-h1 {
-  margin: 0 0 0.5rem 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav > ul {
-  display: flex;
-  gap: 2rem;
-}
-
-.dropdown > li {
-  position: relative;
-}
-
-.dropdown ul {
-  display: none;
-  position: absolute;
-  top: 2rem;
-  background-color: #222;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-
-.dropdown li:hover > ul {
-  display: block;
-}
-
-.dropdown ul li a {
-  color: white;
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-}
-
-.dropdown ul li a:hover {
-  background-color: #444;
-}
-
-.intro, .news-box {
-  padding: 2rem;
-}
-
-.news-box {
-  background: #eee;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skycmane Gaming</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Skycmane's Gaming World</h1>
+      <nav>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="#">Xavier</a>
+            <ul>
+              <li><a href="games/fps.html">5 star cards</a></li>
+              <li><a href="games/rpg.html">Myths</a></li>
+              <li><a href="games/indie.html">4 star cards</a></li>
+              <li><a href="games/indie.html">Secret times</a></li>
+              <li><a href="games/indie.html">Tender moments</a></li>
+              <li><a href="games/indie.html">Chronological order</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#">Zayne</a>
+            <ul>
+              <li><a href="games/fps.html">5 star cards</a></li>
+              <li><a href="games/rpg.html">Myths</a></li>
+              <li><a href="games/indie.html">4 star cards</a></li>
+              <li><a href="games/indie.html">Secret times
