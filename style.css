@@ -7,7 +7,6 @@ body {
 
 header {
   background-color: #4F1C51;
-  color: #DCA06D;
   padding: 10px 20px;
 }
 
@@ -19,37 +18,30 @@ header {
 }
 
 .logo {
-  margin: 0;
   font-size: 1.5em;
   color: #DCA06D;
+  margin: 0;
 }
 
 nav {
+  flex-grow: 1;
   display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.nav-links,
-.menu-top-right {
+.nav-menu {
   list-style: none;
   display: flex;
+  gap: 15px;
   margin: 0;
   padding: 0;
 }
 
-.nav-links > li,
-.menu-top-right > li {
+.nav-menu li {
   position: relative;
-  margin-left: 15px;
 }
 
-.menu-top-right {
-  margin-left: auto;
-}
-
-nav a {
+.nav-menu > li > a {
   color: #DCA06D;
   text-decoration: none;
   padding: 10px;
@@ -57,7 +49,7 @@ nav a {
   transition: background-color 0.2s ease;
 }
 
-nav ul li ul {
+.nav-menu li ul {
   display: none;
   position: absolute;
   background-color: #4F1C51;
@@ -67,18 +59,37 @@ nav ul li ul {
   z-index: 1000;
 }
 
-nav ul li:hover ul {
+.nav-menu li:hover ul {
   display: block;
 }
 
-nav ul li ul li {
+.nav-menu li ul li {
   border-bottom: 1px solid #A55B4B;
 }
 
-nav ul li ul li a:hover {
+.nav-menu li ul li a {
+  color: #DCA06D;
+  padding: 10px;
+  display: block;
+}
+
+.nav-menu li ul li a:hover {
   background-color: #A55B4B;
   color: #210F37;
 }
 
 main {
-  padding
+  padding: 20px;
+}
+
+.intro {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.news-box {
+  background-color: #4F1C51;
+  padding: 15px;
+  border: 1px solid #A55B4B;
+  margin-top: 20px;
+}
