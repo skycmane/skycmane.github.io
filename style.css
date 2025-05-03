@@ -7,6 +7,7 @@ body {
 
 header {
   background-color: #4F1C51;
+  color: #DCA06D;
   padding: 10px 20px;
 }
 
@@ -18,30 +19,37 @@ header {
 }
 
 .logo {
+  margin: 0;
   font-size: 1.5em;
   color: #DCA06D;
-  margin: 0;
 }
 
 nav {
-  flex-grow: 1;
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.nav-menu {
+.nav-links,
+.menu-top-right {
   list-style: none;
   display: flex;
-  gap: 15px;
   margin: 0;
   padding: 0;
 }
 
-.nav-menu li {
+.nav-links > li,
+.menu-top-right > li {
   position: relative;
+  margin-left: 15px;
 }
 
-.nav-menu > li > a {
+.menu-top-right {
+  margin-left: auto;
+}
+
+nav a {
   color: #DCA06D;
   text-decoration: none;
   padding: 10px;
@@ -49,7 +57,7 @@ nav {
   transition: background-color 0.2s ease;
 }
 
-.nav-menu li ul {
+nav ul li ul {
   display: none;
   position: absolute;
   background-color: #4F1C51;
@@ -59,21 +67,15 @@ nav {
   z-index: 1000;
 }
 
-.nav-menu li:hover ul {
+nav ul li:hover ul {
   display: block;
 }
 
-.nav-menu li ul li {
+nav ul li ul li {
   border-bottom: 1px solid #A55B4B;
 }
 
-.nav-menu li ul li a {
-  color: #DCA06D;
-  padding: 10px;
-  display: block;
-}
-
-.nav-menu li ul li a:hover {
+nav ul li ul li a:hover {
   background-color: #A55B4B;
   color: #210F37;
 }
@@ -92,4 +94,5 @@ main {
   padding: 15px;
   border: 1px solid #A55B4B;
   margin-top: 20px;
+  color: #DCA06D;
 }
